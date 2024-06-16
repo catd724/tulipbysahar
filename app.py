@@ -12,8 +12,8 @@ from dotenv import load_dotenv
 
 # Load environment variables
 # Configure the API key using Streamlit secrets
-googlekey = st.secrets["auth_token"]
-genai.configure(api_key=googlekey)
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+genai.configure(api_key=GOOGLE_API_KEY)
 
 # Initialize chat history and current QA state
 if "chat_history" not in st.session_state:
