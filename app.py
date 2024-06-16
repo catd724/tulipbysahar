@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 
 # Load environment variables
 # Configure the API key using Streamlit secrets
-GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+GOOGLE_API_KEY = st.secrets["auth_token"]
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Initialize chat history and current QA state
